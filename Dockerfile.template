@@ -1,0 +1,7 @@
+FROM perl:%VERSION%
+
+RUN cpanm -nq App::cpm && \
+    rm -rf ~/.cpanm
+
+WORKDIR /
+
